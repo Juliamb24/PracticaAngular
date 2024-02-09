@@ -1,19 +1,19 @@
 <section>
     <div>
         <label for="titulo">Título</label>
-        <input type="text" id="titulo" placeholder="Título de la noticia">
+        <input type="text" id="titulo" placeholder="Título de la noticia" [(ngModel)]="nuevaNoticia.titulo">
     </div>
     <div>
         <label for="imagen">Imagen</label>
-        <input type="url" id="imagen" placeholder="Insertar url imagen">
+        <input type="url" id="imagen" placeholder="Insertar url imagen" [(ngModel)]="nuevaNoticia.imagen">
     </div>
     <div>
-        <label for="texto"></label>
-        <textarea name="texto" id="texto" cols="30" rows="5"></textarea>
+        <label for="texto">Cuerpo de la noticia</label>
+        <textarea name="texto" id="texto" cols="30" rows="5" [(ngModel)]="nuevaNoticia.texto"></textarea>
     </div>
     <div>
         <label for="fecha">Fecha de publicación</label>
-        <input type="date" id="fecha">
+        <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha">
     </div>
-    <button>Enviar</button>
+    <button (click)="guardar()">Enviar</button>
 </section>

@@ -5,7 +5,7 @@
 <main>
 <section>
   <div>
-    <app-form></app-form>
+    <app-form (noticiaPintada)="insertData($event)"></app-form>
   </div>
   <aside>
     <app-list [publicaciones]="arrNoticias"></app-list>

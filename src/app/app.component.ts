@@ -26,4 +26,9 @@ export class AppComponent {
       fecha:"02/11/24",
     }    
   ]
+
+  insertData($event: INoticias) : void {
+    this.arrNoticias.push($event)
+  }
+
 }
