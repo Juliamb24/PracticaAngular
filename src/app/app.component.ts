@@ -15,15 +15,15 @@ export class AppComponent {
   arrNoticias: INoticias[] = [
     {
       titulo:"primera noticia",
-      imagen: "url.htpjdhn,.com",
+      imagen: "https://placehold.co/200x200",
       texto:"hola esta es la primera noticia",
-      fecha:2/2/24,
+      fecha:"02/02/24",
     },
     {
       titulo:"segunda noticia",
-      imagen: "url.dfsfe,.com",
+      imagen: "https://placehold.co/200x200",
       texto:"hola esta es la segunda noticia ",
-      fecha:15/2/24,
+      fecha:"02/11/24",
     }    
   ]
 }

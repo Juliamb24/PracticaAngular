@@ -14,8 +14,18 @@ export class ListComponent {
     this.cargarDatos()
   }
 
-  cargarDatos(){
-    console.log(this.publicaciones)
+  cargarDatos(): string {
+    let html = "";
+    this.publicaciones.forEach(noticia =>{
+      html += `<article>
+                <h3>${noticia.titulo}</h3>
+                <img src="${noticia.imagen}" alt="${noticia.titulo}">
+                <p>${noticia.texto}</p>
+                <span>${noticia.fecha}</span>
+               </article>`
+    })
+    
+    return html;
   }
 
 
