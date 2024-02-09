@@ -9,3 +9,29 @@ header {
     border-bottom: solid 1px #ccc;
     text-align: center;
 }
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+section div {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+section aside {
+    background-color: lightpink;
+    width: 100%;
+}
+
+
+
+@media(min-width:900px){
+    section {
+        flex-direction: row;
+    }
+}
