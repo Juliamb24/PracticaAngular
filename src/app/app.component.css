@@ -10,28 +10,35 @@ header {
     text-align: center;
 }
 
-section{
+.wrapper{
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    gap: 15px;
+    
    
 }
 
-section div {
-    background-color: aliceblue;
-    width: 100%;
+.wrapper div {
+    background-color: #0088ff;
+    border-radius: 10px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.3);
+    width: 45%;
+    height: fit-content;
 }
 
-section aside {
-    background-color: lightpink;
-    width: 100%;
+.wrapper aside {
+    background-color: #b6d3ec28;
+    border-radius: 10px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.3);
+    width: 45%;
+    height: fit-content;
 }
 
 
 
 @media(min-width:900px){
-    section {
+    .wrapper {
         flex-direction: row;
     }
 }

@@ -1,20 +1,59 @@
+section {
+    padding: 10px;
+}
+section div{
+    padding: 10px;
+}
+
+section div label{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 section div input,textarea {
+    border-radius: 5px;
+    border: solid 1px #000000a9;
+    font-size: 1rem; 
     width: 97%;
     padding: 5px;
 }
+   
 section div label {
-   background-color: antiquewhite;
-   margin: 15px 0;
-   padding: 5px 0;
+   color: #fff;
+   margin: 10px 0;
    display: block;
 }
 
 #fecha {
     text-align: center;
-    width: 20%;
+    max-width: fit-content;
+    cursor: text;
+
 }
 button{
     padding: 10px;
     border-radius: 10px;
-    
+    border: solid 1px #fff;
+    text-transform: uppercase;
+    background-color: #00000069;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    border: solid 1px #0000008f;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.fecha {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
 }

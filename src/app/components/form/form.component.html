@@ -11,9 +11,12 @@
         <label for="texto">Cuerpo de la noticia</label>
         <textarea name="texto" id="texto" cols="30" rows="5" [(ngModel)]="nuevaNoticia.texto"></textarea>
     </div>
-    <div>
+    <div class="fecha">
         <label for="fecha">Fecha de publicación</label>
         <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha">
     </div>
-    <button (click)="guardar()">Enviar</button>
+    <div class="btn">
+        <button (click)="guardar()">Guardar</button>
+    </div>
+    
 </section>
