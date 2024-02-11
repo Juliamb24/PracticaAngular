@@ -36,14 +36,23 @@ header {
 }
 
 .wrapper aside {
-    background-color: #ff5e00b3;
+    background-color: #0088ff;
     border-radius: 10px;
     box-shadow: -5px 0 10px rgba(0,0,0,0.3);
     width: 45%;
-    height: fit-content;
-    
+    max-height: 1050px;
+    overflow-y: scroll;
+    scrollbar-color: rgba(0, 0, 0, .5) #077de541;
+    scrollbar-width: thin;
+   
 }
 
+
+
+.wrapper aside:hover{
+    background-color: #077de5;
+    
+}
 
 
 @media(min-width:900px){

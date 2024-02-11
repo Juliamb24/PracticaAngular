@@ -13,15 +13,18 @@ export class ListComponent {
   ngOnInit(): void {
     this.cargarDatos()
   }
-
+ 
+  
   cargarDatos(): string {
     let html = "";
     this.publicaciones.forEach(noticia =>{
+      const dividirFecha = noticia.fecha.split("-");
+      const fechaInvertida = dividirFecha.reverse().join("-");
       html += `<article>
                 <h3>${noticia.titulo}</h3>
                  <p>${noticia.texto}</p>
                 <div><img src="${noticia.imagen}" alt="${noticia.titulo}"></div>
-                <span>${noticia.fecha}</span>
+                <span>${fechaInvertida}</span>
                </article>`
     })
     
