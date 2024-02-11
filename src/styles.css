@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+.list  article h3 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.list article {
+    margin-bottom: 5px;
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+   padding: 0 20px;
+}
+
+.list  article p {
+    font-size: 1rem;
+}
+
+.list  article div {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.list  article span {
+    display: flex;
+    justify-content: flex-end;
+
+}

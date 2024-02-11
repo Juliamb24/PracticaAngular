@@ -19,8 +19,8 @@ export class ListComponent {
     this.publicaciones.forEach(noticia =>{
       html += `<article>
                 <h3>${noticia.titulo}</h3>
-                <img src="${noticia.imagen}" alt="${noticia.titulo}">
-                <p>${noticia.texto}</p>
+                 <p>${noticia.texto}</p>
+                <div><img src="${noticia.imagen}" alt="${noticia.titulo}"></div>
                 <span>${noticia.fecha}</span>
                </article>`
     })

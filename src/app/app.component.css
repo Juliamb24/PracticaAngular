@@ -6,8 +6,11 @@
 
 header {
     padding: 15px;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 3px #ccc;
     text-align: center;
+    background-color: #0088ff;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .wrapper{
@@ -25,14 +28,20 @@ header {
     box-shadow: -5px 0 10px rgba(0,0,0,0.3);
     width: 45%;
     height: fit-content;
+    transition: all 0.5 ease;
+}
+.wrapper div:hover{
+    background-color: #077de5;
+    
 }
 
 .wrapper aside {
-    background-color: #b6d3ec28;
+    background-color: #ff5e00b3;
     border-radius: 10px;
     box-shadow: -5px 0 10px rgba(0,0,0,0.3);
     width: 45%;
     height: fit-content;
+    
 }
 
 
@@ -42,3 +51,4 @@ header {
         flex-direction: row;
     }
 }
+
