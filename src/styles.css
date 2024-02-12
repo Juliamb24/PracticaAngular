@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+.list  article h3 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.list article {
+   margin: 20px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: -3px 0 20px #00000047;
+}
+.list article:hover {
+    background-color: #eeeeee;
+} 
+
+.list {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 10px;
+   align-items: center;
+}
+
+.list  article p {
+    font-size: 1.15rem;
+}
+
+.list  article div {
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.list  article div img {
+    width: 300px;
+    height: 200px;
+}
+
+.list  article span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+
+}
